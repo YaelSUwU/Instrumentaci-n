@@ -36,6 +36,27 @@ internal class Program {
 		return x;
 	}
 
+
+
+	static void generacion(int anio) {
+		if (anio <= 1945)
+		{
+            Console.WriteLine("tradicional");
+		}else if (anio <= 1960)
+		{
+            Console.WriteLine("baby boomer");
+		}else if (anio <= 1980)
+		{
+            Console.WriteLine("x");
+		}else if(anio <= 1996)
+		{
+			Console.WriteLine("milenial");
+		}else
+		{
+			Console.WriteLine("z");
+		}
+	}
+
 		static void main(strings[] args) {
 		x = generateArray(0, 10, 0.1);
 		for(int i=0; i < x.Length; i++)
@@ -45,6 +66,7 @@ internal class Program {
 
 		double sigma = sumatoria(x);
         Console.WriteLine("sigma");
+		generacion(2000);
 			//Console.WriteLine("ingrese el radio");
 			//double r= Convert.ToDouble(Console.ReadLine());
 			//double area = areaCirculo(r);
